@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/accept_params'
 
 # backport require_relative for ruby 1.8 compat
 unless Kernel.respond_to?(:require_relative)
