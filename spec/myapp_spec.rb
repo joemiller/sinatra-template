@@ -7,7 +7,7 @@ describe "PuppetDashApi" do
     @app ||= MyApp.new
   end
   
-  it "should return all nodes when no name is specified" do
+  it "should return hello world when the root route is called" do
     get '/'
     last_response.status.should == 200
     last_response.body.should == 'hello world'
