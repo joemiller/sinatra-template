@@ -1,0 +1,23 @@
+development:
+    host: localhost
+    port: 27017
+    db: myapp_dev
+    user:
+    pass: 
+    pool_size: 5
+        
+test:
+    host: localhost
+    port: 27017
+    db: myapp_test
+    user:
+    pass: 
+    pool_size: 5
+
+production:
+    host: localhost
+    port: 27017
+    db: myapp
+    user:
+    pass: 
+    pool_size: 5

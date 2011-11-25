@@ -10,6 +10,9 @@ unless Kernel.respond_to?(:require_relative)
   end
 end
 
+## load up any config stuff now
+Dir["#{File.dirname(__FILE__)}/config/**/*.rb"].each {|f| require f}
+
 require_relative 'routes/init'
 require_relative 'helpers/init'
 require_relative 'models/init'
